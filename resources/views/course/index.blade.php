@@ -26,11 +26,7 @@ th {
 }
 
 
-body {
-    max-width: 12000px; /* Adjust the value as needed */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 0 20px; /* Add some padding to prevent content from touching the edges */
-}
+
 
 
 </style>
@@ -40,24 +36,12 @@ body {
 
 
 <body>
-
-
-
-<div class="py-12">
-    <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
-            <header><h1>Course</h1>
-            </header>    
-        </div>
-    </div>
-</div>
-
-
-
-<div class ="py-12">
-    <div class="max-w-7xl mx-auto sm:rounded-lg p-6">
-        <table class="table table-striped text-center"  >
-    
+<br><br>
+<div class ="container"  style="text-align: center;">
+    <div class="group p-6">
+    <header><h1>Course</h1></header>     
+    <table class="table table-striped text-center"  >
+            
            <thead>
                 <tr>
                     <th>ID</th>
@@ -97,10 +81,11 @@ body {
             </tbody>
         </table>
     </div>
+
+
+    <button class="btn btn-primary" type="submit">Add Course</button>
+
 </div>
-
-<button class="btn btn-primary" type="submit" style="float: right;">Add Course</button>
-
 
 
 
