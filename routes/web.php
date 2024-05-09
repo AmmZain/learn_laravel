@@ -15,11 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [CatController::class, 'index']); {
+Route::get('/', [CatController::class, 'index']);
+Route::delete('/cats/{cat}', [CatController::class, 'destroy'])->name('cats.destroy');
     //return view ('course/form');
     //return view ('course/index');
     //return view ('student/index');
     //return view ('student/form');
     //return view('welcome');
 
-};
+
