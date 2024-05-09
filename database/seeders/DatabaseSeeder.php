@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Task;
 use Illuminate\Database\Seeder;
+use App\Models\Cat;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,10 +16,14 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
      $this->call([
-            TaskSeeder::class,
+            TaskSeeder::class, ]);
 
 
-     ]);
+
+    $this->call([
+            CatSeeder::class, ]);
+
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
@@ -26,4 +31,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
     }
+
+    
+
 }

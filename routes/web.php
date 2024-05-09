@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CatController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -14,11 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [CatController::class, 'index']); {
     //return view ('course/form');
     //return view ('course/index');
     //return view ('student/index');
     //return view ('student/form');
-    return view('welcome');
+    //return view('welcome');
 
-});
+};
